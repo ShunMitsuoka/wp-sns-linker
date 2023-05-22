@@ -1,32 +1,25 @@
-<table class="data_table">
-	<tr>
-		<th>日時</th><th>お名前</th><th>メールアドレス</th><th>お問い合わせ内容</th><th></th>
-	</tr>
-	<tr>
-		<td>2022-04-07 00:00:00</td>
-		<td>テスト太郎</td>
-		<td>taro@gray-code.com</td>
-		<td>テストです。</td>
-		<td>
-			<a href="&cm=edit&id=1">編集</a>  <a href="&cm=delete&id=1">削除</a>
-		</td>
-	</tr>
-	<tr>
-		<td>2022-04-07 01:01:00</td>
-		<td>テスト花子</td>
-		<td>hanako@gray-code.com</td>
-		<td>テストです。</td>
-		<td>
-			<a href="&cm=edit&id=1">編集</a>  <a href="&cm=delete&id=1">削除</a>
-		</td>
-	</tr>
-	<tr>
-		<td>2022-04-07 02:02:00</td>
-		<td>テスト健太</td>
-		<td>kenta@gray-code.com</td>
-		<td>テストです。</td>
-		<td>
-			<a href="&cm=edit&id=1">編集</a>  <a href="&cm=delete&id=1">削除</a>
-		</td>
-	</tr>
-</table>
+<?php
+
+$args = array(
+	'numberposts'	=> 20,
+);
+$my_posts = get_posts( $args );
+
+foreach ( $my_posts as $post ): // $datas as $post の $datas は取得時に設定した変数名、$postは変更不可
+?>
+<div>
+    <form action="" method="GET">
+        <div>
+            <?=$post->post_title?>
+        </div>
+        <input type="hidden" name="page" value="snslinker">
+        <input type="hidden" name="sl-page" value="post">
+        <input type="hidden" name="post-id" value="<?=$post->ID?>">
+        <button type="submit">sns連携</button>
+    </form>
+</div>
+
+<?php
+endforeach; 
+wp_reset_postdata();
+?>
