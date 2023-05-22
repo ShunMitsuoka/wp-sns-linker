@@ -9,7 +9,7 @@ $my_posts = get_posts( $args );
 <table>
     <thead>
         <tr>
-            <td>Title</td>
+            <td>記事一覧</td>
             <td></td>
         </tr>
     </thead>
