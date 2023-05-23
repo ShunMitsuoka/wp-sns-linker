@@ -1,17 +1,85 @@
-.sns-linker-wrap input{
-    width: 100%;
+.sns-linker-wrap .input-form {
+  -webkit-margin-before: 0.5rem;
+          margin-block-start: 0.5rem;
+}
+.sns-linker-wrap .input-form .input-form-label {
+  font-weight: bold;
+  -webkit-margin-after: 0.25rem;
+          margin-block-end: 0.25rem;
+}
+.sns-linker-wrap .form-button-container {
+  text-align: right;
 }
 
-.sns-linker-wrap button{
-    padding-block: .25rem;
-    padding-inline: 1rem;
-    background-color: deepskyblue;
-    color: white;
-    border: none;
-    border-radius: .25rem;
-    cursor: pointer;
+.sns-linker-wrap input {
+  width: 100%;
+}
+.sns-linker-wrap textarea {
+  width: 100%;
+}
+.sns-linker-wrap button {
+  padding-block: 0.25rem;
+  padding-inline: 1rem;
+  background-color: #334155;
+  color: #fff;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  box-shadow: 0 2px 3px 0 #94a3b8;
+}
+.sns-linker-wrap button:hover {
+  background-color: #1e293b;
 }
 
-.sns-linker-wrap button:hover{
-    background-color: rgb(8, 144, 189);
+.snslinker-page-index {
+  padding-block: 2rem;
 }
+.snslinker-page-index table {
+  border-collapse: collapse;
+}
+.snslinker-page-index table td {
+  border: 1px solid;
+  border-color: #1e293b;
+  padding-inline: 0.5rem;
+  padding-block: 0.25rem;
+}
+.snslinker-page-index table thead tr {
+  background-color: #1e293b;
+}
+.snslinker-page-index table thead tr td {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+  padding-block: 0.5rem;
+}
+.snslinker-page-index table tbody tr {
+  background-color: #fff;
+}
+
+.snslinker-page-post {
+  width: 90%;
+  max-width: 1000px;
+  background-color: #f8fafc;
+  border-radius: 1rem;
+  padding-inline: 2rem;
+  padding-block: 2rem;
+}
+.snslinker-page-post .article-title {
+  font-size: 1.5rem;
+}
+.snslinker-page-post form {
+  -webkit-margin-before: 1.5rem;
+          margin-block-start: 1.5rem;
+}
+
+.snslinker-page-setting {
+  width: 90%;
+  max-width: 1000px;
+  background-color: #f8fafc;
+  border-radius: 1rem;
+  padding-inline: 2rem;
+  padding-block: 2rem;
+}
+.snslinker-page-setting .article-title {
+  font-size: 1.5rem;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,14 @@
+@use '../config/config';
+
+.sns-linker-wrap {
+    .input-form{
+        margin-block-start: .5rem;
+        .input-form-label{
+            font-weight: bold;
+            margin-block-end: .25rem;
+        }
+    }
+    .form-button-container{
+        text-align: right;
+    }
+}

@@ -1,0 +1,30 @@
+@use '../config/config';
+
+.snslinker-page-index{
+    padding-block: 2rem;
+    table{
+        border-collapse:collapse;
+        td{
+            border: 1px solid;
+            border-color: config.$slate-800;
+            padding-inline: .5rem;
+            padding-block: .25rem;
+        }
+        thead{
+            tr{
+                background-color: config.$slate-800;
+                td{
+                    color: config.$white;
+                    font-weight: bold;
+                    font-size: 1rem;
+                    padding-block: .5rem;
+                }
+            }
+        }
+        tbody{
+            tr{
+                background-color: config.$white;
+            }
+        }
+    }
+}

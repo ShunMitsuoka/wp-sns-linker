@@ -1,0 +1,13 @@
+@use '../config/config';
+
+.snslinker-page-setting{
+    width: 90%;
+    max-width: 1000px;
+    background-color: config.$slate-50;
+    border-radius: 1rem;
+    padding-inline: 2rem;
+    padding-block: 2rem;
+    .article-title{
+        font-size: 1.5rem;
+    }
+}

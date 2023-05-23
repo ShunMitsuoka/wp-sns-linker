@@ -1,0 +1,23 @@
+@use '../config/config';
+
+.sns-linker-wrap {
+    input{
+        width: 100%;
+    }
+    textarea{
+        width: 100%;
+    }
+    button{
+        padding-block: .25rem;
+        padding-inline: 1rem;
+        background-color: config.$slate-700;
+        color: config.$white;
+        border: none;
+        border-radius: .25rem;
+        cursor: pointer;
+        box-shadow: 0 2px 3px 0 config.$slate-400;
+        &:hover{
+            background-color: config.$slate-800;
+        }
+    }
+}
